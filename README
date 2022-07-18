@@ -56,7 +56,7 @@ From https://github.com/coolsnowwolf/lede
     
   下载源代码，更新 feeds 并选择配置
 
-    git clone https://github.com/coolsnowwolf/lede
+    git clone https://github.com/KK2018gh/openwrt-ax1800.git
     cd lede
     ./scripts/feeds update -a
     ./scripts/feeds install -a
@@ -65,7 +65,7 @@ From https://github.com/coolsnowwolf/lede
    
   下载 dl 库，编译固件 （-j 后面是线程数，第一次编译推荐用单线程）
 
-    make download -j8
+    make download -j8 V=s
     make V=s -j1
 
 本套代码保证肯定可以编译成功。里面包括了 R21 所有源代码，包括 IPK 的。
@@ -81,7 +81,7 @@ git pull
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 make defconfig
-make download -j8
+make download -j8 V=s
 make V=s -j$(nproc)
 
 
@@ -98,6 +98,8 @@ make V=s -j$(nproc)
 由于 WSL 的 PATH 中包含带有空格的 Windows 路径，有可能会导致编译失败，请在 make 前面加上：
 
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+
 
 
 macOS 原生系统进行编译
