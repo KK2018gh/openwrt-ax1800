@@ -1,4 +1,5 @@
-From https://github.com/coolsnowwolf/lede
+From https://github.com/coolsnowwolf/openwrt-gl-ax1800
+
 Thanks a lot！
 
 
