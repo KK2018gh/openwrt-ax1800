@@ -31,7 +31,7 @@ Thanks a lot！
 3. 下载源代码，更新 feeds 并选择配置
 
    ```bash
-   git clone https://github.com/KK2018gh/openwrt-ax1800.git
+   git clone https://github.com/KK2018gh/zn-m2.git
    cd openwrt-ax1800
    ./scripts/feeds update -a
    ./scripts/feeds install -a
